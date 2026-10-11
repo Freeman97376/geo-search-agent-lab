@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "commercial-pilot-v1",
+  "status": "pilot_not_acceptance_baseline",
+  "as_of": "2026-09-28",
+  "repeats": 2,
+  "platforms": ["chatgpt", "claude", "gemini"],
+  "interface": "web",
+  "cases": [
+    {
+      "id": "q01", "topic_group": "knowledge_base", "language": "zh",
+      "query": "截至2026年9月28日，为一家位于美国、20人规模的小企业比较 Notion 和 Confluence 作为内部知识库的适用性。重点比较权限与外部访客、搜索能力、按年付费价格及主要限制。请搜索公开资料，并给出可核查的来源链接。",
+      "facets": {"permissions": "权限与外部访客", "search": "搜索能力", "pricing": "美国20人按年付费价格", "limits": "主要限制及适用性"},
+      "constraints": ["美国", "20人", "截至2026-09-28", "比较两个产品", "按年付费"],
+      "target_domains": ["notion.com", "atlassian.com"]
+    },
+    {
+      "id": "q02", "topic_group": "ecommerce_cost", "language": "zh",
+      "query": "截至2026年9月28日，一家美国小商家准备开网店，预计每月100笔订单、每笔50美元。比较 Shopify Basic 和 WooCommerce 在第一年的总成本构成，包括订阅或托管、支付处理、额外交易费与维护。明确计算假设和未计入项目，请搜索并引用官方公开资料。",
+      "facets": {"hosting": "订阅或托管费用", "payments": "支付处理与额外交易费", "maintenance": "维护和未计入项目", "annual_cost": "统一假设下的第一年成本"},
+      "constraints": ["美国", "每月100笔", "每笔50美元", "第一年", "截至2026-09-28"],
+      "target_domains": ["shopify.com", "woocommerce.com"]
+    },
+    {
+      "id": "q03", "topic_group": "messaging_policy", "language": "en",
+      "query": "As of September 28, 2026, what are the limits of Slack's free plan for a small business that needs to retain and export its message history? Search for official documentation, distinguish visibility from retention and export permissions, and cite sources. Do not assume that hidden messages are necessarily deleted.",
+      "facets": {"visibility": "message visibility limits", "retention": "retention/deletion rules", "export": "export permissions and limits"},
+      "constraints": ["free plan", "as of 2026-09-28", "distinguish hidden from deleted", "official sources"],
+      "target_domains": ["slack.com"]
+    },
+    {
+      "id": "q04", "topic_group": "meeting_comparison", "language": "en",
+      "query": "As of September 28, 2026, compare Zoom Workplace Pro and Google Workspace Business Standard for a US small business hosting external meetings with 100 participants. Search for annual-billing prices, meeting limits, recording and transcription availability, and cite official sources. Separate included features from paid add-ons.",
+      "facets": {"pricing": "US annual-billing prices", "capacity": "100 participants and meeting limits", "recording": "recording availability", "transcription": "transcription and add-ons"},
+      "constraints": ["US", "100 participants", "external meetings", "annual billing", "as of 2026-09-28"],
+      "target_domains": ["zoom.com", "zoom.us", "google.com"]
+    },
+    {
+      "id": "q05", "topic_group": "accessibility_policy", "language": "zh",
+      "query": "截至2026年9月28日，一家向欧盟消费者销售实物商品的小型独立电商，应如何核查《欧洲无障碍法》是否适用于其在线商店？请搜索欧盟官方公开资料，区分适用服务、适用时间、微型企业例外和成员国实施差异，并列出仍需企业自行核实的条件。",
+      "facets": {"scope": "在线商店及服务适用范围", "dates": "适用时间", "exceptions": "微型企业例外及条件", "implementation": "成员国实施差异和待核实条件"},
+      "constraints": ["欧盟消费者", "实物商品电商", "不预设企业符合例外", "截至2026-09-28", "官方资料"],
+      "target_domains": ["europa.eu"]
+    },
+    {
+      "id": "q06", "topic_group": "developer_updates", "language": "zh",
+      "query": "以2026年9月28日为截止日，搜索此前90天 GitHub 官方发布的 GitHub Actions 安全相关变化。请区分已上线功能、预览功能与未来计划，说明对小型开发团队的可能影响，并引用带日期的官方公告；如果没有足够证据，不要编造变化。",
+      "facets": {"updates": "时间窗口内的安全变化", "status": "上线/预览/计划区别", "impact": "小团队影响", "dated_evidence": "带日期的官方证据和证据不足处理"},
+      "constraints": ["此前90天", "截至2026-09-28", "GitHub Actions", "官方公告", "不编造"],
+      "target_domains": ["github.com", "github.blog"]
+    }
+  ]
+}

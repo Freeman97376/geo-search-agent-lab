@@ -1,0 +1,1093 @@
+{
+  "study_id": "planner-draft-v1",
+  "version": "draft-v1",
+  "seed": 20261002,
+  "data_kind": "fixture",
+  "cases": [
+    {
+      "family_id": "manufacturing-fact",
+      "sector": "manufacturing",
+      "category": "fact",
+      "prompt": "What documentation should a US buyer request to verify a CNC supplier's ISO 9001 certification?",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Evidence used to verify certification"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "CNC supplier"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "US buyer"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "manufacturing-discovery",
+      "sector": "manufacturing",
+      "category": "discovery",
+      "prompt": "Find manufacturers that offer private-label stainless steel water bottles to US retailers, and explain how to contact them.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Eligible manufacturers"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Contact routes"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "Private-label stainless steel bottles"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "US retailers"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "manufacturing-screening",
+      "sector": "manufacturing",
+      "category": "screening",
+      "prompt": "Find packaging manufacturers serving US brands that accept an initial order of at most 500 custom printed boxes and publish their lead times.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Supplier candidates"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Evidence of minimum order and lead time"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "At most 500 boxes"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "Custom printing"
+        },
+        {
+          "item_id": "C3",
+          "kind": "constraint",
+          "text": "US service"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "manufacturing-comparison",
+      "sector": "manufacturing",
+      "category": "comparison",
+      "prompt": "Compare domestic and overseas contract manufacturing for a US startup ordering 1,000 aluminum enclosures, including landed cost and lead-time risks.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Landed cost comparison"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Lead-time risk comparison"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "US startup"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "1,000 aluminum enclosures"
+        },
+        {
+          "item_id": "C3",
+          "kind": "constraint",
+          "text": "Domestic versus overseas"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "manufacturing-time_sensitive",
+      "sector": "manufacturing",
+      "category": "time_sensitive",
+      "prompt": "As of October 2, 2026, what US import requirements apply to wooden furniture from Vietnam, and which official sources should a buyer check?",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Applicable import requirements"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Authoritative verification sources"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "United States"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "Wooden furniture from Vietnam"
+        },
+        {
+          "item_id": "C3",
+          "kind": "constraint",
+          "text": "As of October 2, 2026"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "manufacturing-linked",
+      "sector": "manufacturing",
+      "category": "linked",
+      "prompt": "For a US brand launching a reusable food container, identify contract manufacturers and explain how material testing and tooling affect supplier selection.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Contract manufacturer discovery"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Link material testing and tooling to selection"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "Reusable food container"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "US brand"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "software-fact",
+      "sector": "software",
+      "category": "fact",
+      "prompt": "What is the difference between per-seat and usage-based pricing for customer support software?",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Explain the pricing mechanisms"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Identify the cost drivers"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "Customer support software"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "software-discovery",
+      "sector": "software",
+      "category": "discovery",
+      "prompt": "Find help-desk platforms suitable for a small US ecommerce team that handles both email and live chat.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Suitable help-desk platforms"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "Small US ecommerce team"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "Email and live chat"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "software-screening",
+      "sector": "software",
+      "category": "screening",
+      "prompt": "Find CRM services for a 10-person US team with published pricing below $40 per user per month and a native email integration.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "CRM candidates"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Pricing and integration evidence"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "10-person US team"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "Below $40 per user per month"
+        },
+        {
+          "item_id": "C3",
+          "kind": "constraint",
+          "text": "Native email integration"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "software-comparison",
+      "sector": "software",
+      "category": "comparison",
+      "prompt": "Compare hosted and self-hosted knowledge bases for a US company, focusing on total cost, access controls, and maintenance work.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Total cost comparison"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Access-control comparison"
+        },
+        {
+          "item_id": "N3",
+          "kind": "need",
+          "text": "Maintenance comparison"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "Hosted versus self-hosted"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "US company"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "software-time_sensitive",
+      "sector": "software",
+      "category": "time_sensitive",
+      "prompt": "As of October 2, 2026, find the current free-plan limits of popular project management tools available to US businesses using official pricing pages.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Current free-plan limits"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Official pricing evidence"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "As of October 2, 2026"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "US business availability"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "software-linked",
+      "sector": "software",
+      "category": "linked",
+      "prompt": "Help a US retailer choose inventory software and explain how its Shopify integration would change order fulfillment and stock reconciliation.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Inventory software candidates"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Connect integration to fulfillment"
+        },
+        {
+          "item_id": "N3",
+          "kind": "need",
+          "text": "Stock reconciliation implications"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "US retailer"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "Shopify integration"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "consumer-fact",
+      "sector": "consumer",
+      "category": "fact",
+      "prompt": "What measurements help determine whether an office chair will fit a tall adult?",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Relevant fit measurements"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "Tall adult"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "Office chair"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "consumer-discovery",
+      "sector": "consumer",
+      "category": "discovery",
+      "prompt": "Find independent online brands selling repairable backpacks to customers in the United States.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Eligible independent brands"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Evidence of repair support"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "Backpacks"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "US customers"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "consumer-screening",
+      "sector": "consumer",
+      "category": "screening",
+      "prompt": "Find induction-compatible cookware sold online in the US for under $200 per set, excluding nonstick coatings.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Eligible cookware sets"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Price and material evidence"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "Induction-compatible"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "Under $200 per set"
+        },
+        {
+          "item_id": "C3",
+          "kind": "constraint",
+          "text": "No nonstick coating"
+        },
+        {
+          "item_id": "C4",
+          "kind": "constraint",
+          "text": "US online availability"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "consumer-comparison",
+      "sector": "consumer",
+      "category": "comparison",
+      "prompt": "Compare buying a refurbished and a new espresso machine for home use in the US, focusing on warranty, total cost, and repair support.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Warranty comparison"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Total cost comparison"
+        },
+        {
+          "item_id": "N3",
+          "kind": "need",
+          "text": "Repair support comparison"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "Refurbished versus new"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "US home use"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "consumer-time_sensitive",
+      "sector": "consumer",
+      "category": "time_sensitive",
+      "prompt": "As of October 2, 2026, what return policies do online mattress brands currently offer US customers, including pickup fees and trial periods?",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Current trial periods"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Return and pickup charges"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "US customers"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "As of October 2, 2026"
+        },
+        {
+          "item_id": "C3",
+          "kind": "constraint",
+          "text": "Online mattress brands"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "consumer-linked",
+      "sector": "consumer",
+      "category": "linked",
+      "prompt": "Find water filters for a US household using well water and explain how a water-test result should guide product selection and replacement costs.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Candidate filtration approaches"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Link test results to selection"
+        },
+        {
+          "item_id": "N3",
+          "kind": "need",
+          "text": "Replacement cost drivers"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "US household"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "Well water"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "logistics-fact",
+      "sector": "logistics",
+      "category": "fact",
+      "prompt": "What is dimensional weight and how does it affect parcel shipping charges for US ecommerce sellers?",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Dimensional-weight calculation"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Effect on shipping charges"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "US ecommerce parcels"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "logistics-discovery",
+      "sector": "logistics",
+      "category": "discovery",
+      "prompt": "Find third-party fulfillment providers serving US independent online stores that ship fragile home decor.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Suitable fulfillment providers"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Evidence of fragile-goods handling"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "US independent online stores"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "Fragile home decor"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "logistics-screening",
+      "sector": "logistics",
+      "category": "screening",
+      "prompt": "Find US fulfillment providers that accept fewer than 300 orders per month and can process customer returns without an annual contract.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Eligible fulfillment providers"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Evidence of eligibility and returns service"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "Fewer than 300 orders per month"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "No annual contract"
+        },
+        {
+          "item_id": "C3",
+          "kind": "constraint",
+          "text": "US fulfillment"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "logistics-comparison",
+      "sector": "logistics",
+      "category": "comparison",
+      "prompt": "Compare in-house fulfillment and a third-party warehouse for a US store shipping 500 orders per month, including storage, labor, and returns costs.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Storage cost comparison"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Labor cost comparison"
+        },
+        {
+          "item_id": "N3",
+          "kind": "need",
+          "text": "Returns cost comparison"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "US store"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "500 orders per month"
+        },
+        {
+          "item_id": "C3",
+          "kind": "constraint",
+          "text": "In-house versus third party"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "logistics-time_sensitive",
+      "sector": "logistics",
+      "category": "time_sensitive",
+      "prompt": "As of October 2, 2026, what published holiday shipping deadlines should a US online store use for domestic delivery before December 25?",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Published holiday deadlines"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Carrier-specific service conditions"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "As of October 2, 2026"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "US domestic delivery"
+        },
+        {
+          "item_id": "C3",
+          "kind": "constraint",
+          "text": "Before December 25, 2026"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "logistics-linked",
+      "sector": "logistics",
+      "category": "linked",
+      "prompt": "For a US skincare store, identify fulfillment partners and explain how storage temperature and returns rules should shape the outsourcing decision.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Fulfillment partner discovery"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Connect temperature requirements to selection"
+        },
+        {
+          "item_id": "N3",
+          "kind": "need",
+          "text": "Connect returns rules to selection"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "US skincare store"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "services-fact",
+      "sector": "services",
+      "category": "fact",
+      "prompt": "What deliverables should be included in an accessibility audit of a US ecommerce website?",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Audit deliverables"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Evidence and remediation guidance"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "US ecommerce website"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "services-discovery",
+      "sector": "services",
+      "category": "discovery",
+      "prompt": "Find bookkeeping firms that work remotely with small US ecommerce businesses and describe their service scope.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Eligible bookkeeping firms"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Service scope"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "Remote service"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "Small US ecommerce businesses"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "services-screening",
+      "sector": "services",
+      "category": "screening",
+      "prompt": "Find product photography studios in the US that publish pricing for batches of 20 products and accept products by mail.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Eligible photography studios"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Batch pricing evidence"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "20 products"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "Mail-in service"
+        },
+        {
+          "item_id": "C3",
+          "kind": "constraint",
+          "text": "US studios"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "services-comparison",
+      "sector": "services",
+      "category": "comparison",
+      "prompt": "Compare hiring a freelance designer and a design agency for a US manufacturer's website redesign, including cost structure, ownership, and ongoing support.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Cost structure comparison"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Ownership terms"
+        },
+        {
+          "item_id": "N3",
+          "kind": "need",
+          "text": "Support comparison"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "US manufacturer website"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "Freelancer versus agency"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "services-time_sensitive",
+      "sector": "services",
+      "category": "time_sensitive",
+      "prompt": "As of October 2, 2026, find the current service packages and cancellation terms of remote bookkeeping providers for US small businesses.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Current service packages"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Cancellation terms"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "Remote bookkeeping"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "US small businesses"
+        },
+        {
+          "item_id": "C3",
+          "kind": "constraint",
+          "text": "As of October 2, 2026"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    },
+    {
+      "family_id": "services-linked",
+      "sector": "services",
+      "category": "linked",
+      "prompt": "For a US manufacturer entering direct-to-consumer sales, find ecommerce implementation agencies and explain how platform choice affects migration and maintenance costs.",
+      "rubric": [
+        {
+          "item_id": "N1",
+          "kind": "need",
+          "text": "Agency candidates"
+        },
+        {
+          "item_id": "N2",
+          "kind": "need",
+          "text": "Link platform choice to migration"
+        },
+        {
+          "item_id": "N3",
+          "kind": "need",
+          "text": "Maintenance costs"
+        },
+        {
+          "item_id": "C1",
+          "kind": "constraint",
+          "text": "US manufacturer"
+        },
+        {
+          "item_id": "C2",
+          "kind": "constraint",
+          "text": "Direct-to-consumer launch"
+        }
+      ],
+      "provenance": "Authored simulation; not a customer log. Public-source grounding and independent family review pending.",
+      "source_urls": [],
+      "source_status": "pending_verification",
+      "captured_at": null,
+      "reference_at": "2026-10-02T00:00:00Z",
+      "review_status": "draft"
+    }
+  ]
+}

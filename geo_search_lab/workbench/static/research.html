@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GEO Search Lab · 研究盲评</title>
+<link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/research.css">
+<script src="/static/research.js" defer></script></head>
+<body><a class="skip" href="#main">跳到主要内容</a>
+<header class="topbar"><a class="brand" href="/">GEO <span>SEARCH LAB</span></a><span class="local">离线研究评审</span></header>
+<main id="main"><div class="page-heading"><div><p class="eyebrow">RESEARCH / SINGLE REVIEWER</p><h1>逐条评阅，再汇总比较</h1>
+<p class="muted">初评隐藏模型、温度和裁判评分。当前阶段仅开放开发集，审计输出保持封存。</p></div><span class="scope">单人调试 · 未完成独立验证</span></div>
+<div id="research-notice" role="alert" tabindex="-1" hidden></div>
+<section class="panel research-controls" aria-label="研究管理">
+<label>选择研究<select id="studies"><option value="">尚无研究</option></select></label>
+<button id="refresh" type="button">刷新</button><button id="create-demo" type="button">创建模拟研究</button>
+<label>导入已审核研究 JSON<input id="import-study" type="file" accept=".json,application/json"></label>
+<a href="/api/v1/research/draft-corpus" target="_blank" rel="noopener">查看 30 题草案</a>
+</section>
+<p id="research-progress" role="status" class="hint">模拟研究使用合成 query，不代表任何模型的实际表现；不会调用模型或搜索服务。</p>
+<div class="workspace-grid"><section class="panel"><h2>开发集评阅队列</h2>
+<p class="muted">36 个参考槽位；未评、失败和不确定分别记录。</p><div id="research-list" class="run-list research-list-limit"></div></section>
+<section class="panel" id="research-detail"><h2>选择一条样本</h2><p class="muted">评分前先阅读原问题、冻结规则和模型生成的 query。没有输出时可导入离线记录。</p></section></div>
+<section class="panel analysis-panel"><div class="section-heading"><div><h2>汇总与导出</h2><p id="analysis-help" class="muted">完成所有开发集初评，或明确记录不可评状态后开放。</p></div>
+<button id="analyze" type="button" disabled>查看评价</button></div>
+<div id="export-links" class="actions" hidden></div><div id="research-analysis"></div></section>
+<footer>API：<a href="/api/v1/research/schemas" target="_blank" rel="noopener">研究数据契约</a> · JSON 保留原始输出、全部评分版本和模拟裁判尝试；CSV 用于表格审阅。</footer>
+</main></body></html>

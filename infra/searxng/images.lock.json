@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "resolved_at_utc": "2026-09-28T06:35:22.333579+00:00",
+  "searxng": {
+    "image": "docker.io/searxng/searxng@sha256:c5455a215b9da11146f594c0f2c9357d5657bc9a7f6e47aa3c2f3f167defb3c3",
+    "resolved_tag": "2026.9.25-12f8b6515",
+    "index_digest": "sha256:5286edb35782454ab8a102c5eff6b54bff745853191b46aeead95f225aa6dfb6",
+    "platform": "linux/amd64",
+    "labels": {
+      "org.opencontainers.image.created": "2026-09-25T16:54:43Z",
+      "org.opencontainers.image.description": "SearXNG is a metasearch engine. Users are neither tracked nor profiled.",
+      "org.opencontainers.image.documentation": "https://docs.searxng.org/admin/installation-docker",
+      "org.opencontainers.image.licenses": "AGPL-3.0-or-later",
+      "org.opencontainers.image.revision": "12f8b6515ca77c3c3bc1498584950ef5daca1433",
+      "org.opencontainers.image.source": "https://github.com/searxng/searxng",
+      "org.opencontainers.image.title": "SearXNG",
+      "org.opencontainers.image.url": "https://searxng.org",
+      "org.opencontainers.image.version": "2026.9.25-12f8b6515"
+    }
+  },
+  "valkey": {
+    "image": "docker.io/valkey/valkey@sha256:3b83b0b6a598bb390c8186a408a69949772f439548a81c5ea0ab7ccf102c248d",
+    "resolved_tag": "9-alpine",
+    "index_digest": "sha256:48332870af354a799964c0012ae1194a0bf2bf894eb508f945810596dc2d8d11",
+    "platform": "linux/amd64",
+    "labels": {
+      "org.opencontainers.image.source": "https://github.com/valkey-io/valkey"
+    }
+  }
+}

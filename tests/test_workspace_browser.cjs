@@ -1,0 +1,68 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const fs=require('node:fs'),os=require('node:os'),path=require('node:path');
+const {spawn}=require('node:child_process');
+const {chromium}=require('playwright');
+const {stopTestServer}=require('./browser_cleanup.cjs');
+
+test('independent planning/search UI, quota preview, three views, exports and mobile', {timeout:90000},async()=>{
+  const root=path.resolve(__dirname,'..'),tmp=fs.mkdtempSync(path.join(os.tmpdir(),'geo-workspace-browser-'));
+  const port=18767,base=`http://127.0.0.1:${port}`;
+  const child=spawn(path.join(root,'.venv','Scripts','python.exe'),['-X','utf8','tests/workspace_browser_server.py',tmp,String(port)],{cwd:root,windowsHide:true,stdio:'pipe'});
+  let logs='',browser;child.stderr.on('data',b=>logs+=b);child.stdout.on('data',b=>logs+=b);
+  try{
+    let ready=false;for(let n=0;n<100;n++){if(child.exitCode!==null)throw new Error(logs);try{if((await fetch(base+'/api/v1/health')).ok){ready=true;break;}}catch{}await new Promise(r=>setTimeout(r,100));}assert.ok(ready,logs);
+    browser=await chromium.launch({headless:true,...(process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE?{executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE}:{})});
+    const context=await browser.newContext({viewport:{width:1365,height:1000}});
+    await context.route('**/*',route=>new URL(route.request().url()).origin===base?route.continue():route.abort());
+    const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));
+    await page.goto(base);
+    await page.locator('#projectName').fill('Fixture-only browser test');await page.locator('#website').fill('example.com');
+    await page.locator('#saveProject').click();await page.waitForFunction(()=>document.getElementById('projectSelect').value);
+    await page.locator('#demands').fill('Compare public lead times and warranty terms for industrial pumps.');await page.locator('#repeats').fill('1');
+    await page.locator('#startPlanning').click();await page.waitForFunction(()=>document.getElementById('resultHeader').textContent.includes('completed'));
+    assert.match(await page.locator('#result').innerText(),/未评定|尚未评定/);
+    assert.match(await page.locator('#researchOverview').innerText(),/计划 2 轮，已记录 2 轮/);
+    assert.equal(await page.locator('#queryFrequencies tbody tr').count(),2);
+    const frequencyCells=await page.locator('#queryFrequencies tbody tr').filter({hasText:'same'}).locator('td').allTextContents();
+    assert.deepEqual(frequencyCells.slice(2),['2','2 / 2','1','1']);
+    const frequencyCSV=await (await fetch(base+await page.locator('#queryFrequencies a').getAttribute('href'))).text();
+    assert.match(frequencyCSV,/occurrence_count,trial_count,valid_trials/);
+    await page.locator('#usePlanning').click();await page.locator('#searchPanel').waitFor({state:'visible'});
+    assert.ok(await page.locator('#importBatch').inputValue());
+    await page.locator('#apiKey').fill('fixture-secret');await page.locator('#saveKey').click();await page.waitForFunction(()=>document.getElementById('keyStatus').textContent.includes('已配置'));
+    assert.equal(await page.locator('#apiKey').inputValue(),'');
+    await page.locator('#requestCap').fill('2');await page.locator('#previewSearch').click();await page.waitForFunction(()=>document.getElementById('preview').textContent.includes('超过请求上限'));
+    assert.equal(await page.locator('#startSearch').isDisabled(),true);
+    await page.locator('#requestCap').fill('10');await page.locator('#previewSearch').click();await page.waitForFunction(()=>!document.getElementById('startSearch').disabled);
+    assert.match(await page.locator('#preview').innerText(),/4 次来源记录 → 2 条独立 query/);
+    await page.locator('#startSearch').click();await page.waitForFunction(()=>document.getElementById('resultHeader').textContent.includes('搜索排名 · completed'));
+    assert.match(await page.locator('#result').innerText(),/已计入 4\/10/);
+    assert.match(await page.locator('#researchOverview').innerText(),/本批研究概览/);
+    assert.match(await page.locator('#researchOverview').innerText(),/两页均已返回，共 20 条自然结果/);
+    assert.match(await page.locator('#researchOverview').innerText(),/Sponsored/);
+    assert.match(await page.locator('#result').innerText(),/原始需求视角/);
+    assert.match(await page.locator('#result').innerText(),/网站视角/);
+    assert.match(await page.locator('#result').innerText(),/指定域名排名/);
+    assert.match(await page.locator('#result').innerText(),/子域名排名/);
+    assert.match(await page.locator('#result').innerText(),/Query 视角/);
+    const exported=await (await fetch(base+await page.locator('#exportJson').getAttribute('href'))).json();
+    assert.equal(exported.counted_requests,4);assert.ok(!JSON.stringify(exported).includes('fixture-secret'));
+    assert.equal(exported.overview.organic_records,40);
+    await page.getByText('竞争网站与指定页面（可随时补充，无需重新搜索）',{exact:true}).click();
+    await page.locator('#competitors').fill('competitor.com');await page.locator('#saveProject').click();
+    await page.waitForFunction(()=>document.getElementById('result').textContent.includes('competitor.com'));
+    const after=await (await fetch(base+await page.locator('#exportJson').getAttribute('href'))).json();assert.equal(after.counted_requests,4);
+    const artifacts=path.join(root,'tests','artifacts');fs.mkdirSync(artifacts,{recursive:true});
+    await page.screenshot({path:path.join(artifacts,'workspace-desktop.png'),fullPage:true});
+    await page.locator('#researchOverview').screenshot({path:path.join(artifacts,'research-overview-desktop.png')});
+    await page.setViewportSize({width:390,height:844});
+    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),true);
+    await page.screenshot({path:path.join(artifacts,'workspace-mobile.png'),fullPage:true});assert.deepEqual(errors,[]);
+  }finally{
+    if(browser)await browser.close();await stopTestServer(child);
+    const resolved=path.resolve(tmp),tempRoot=path.resolve(os.tmpdir());
+    assert.ok(resolved.startsWith(tempRoot+path.sep)&&path.basename(resolved).startsWith('geo-workspace-browser-'));
+    fs.rmSync(resolved,{recursive:true,force:true,maxRetries:3,retryDelay:150});
+  }
+});

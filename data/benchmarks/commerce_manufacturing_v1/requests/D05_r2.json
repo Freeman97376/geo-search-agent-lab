@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "kind": "planner",
+  "prompt": "我们是一家从中国向德国消费者销售女士亚麻连衣裙的独立站，既有普通现货，也有按客户具体尺寸定制的商品。请查找截至2026年9月28日欧盟和德国官方关于网购撤回权、退货费用、瑕疵商品及定制商品例外的资料，帮助列出制定退货条款前应核查的事项。不要假设所有定制标签都能免退，也不要把英国规则用于德国。",
+  "title": "D05 跨境退货政策核查 第2次",
+  "experiment_id": "commerce-manufacturing-v1",
+  "profile_id": "qwen3-8b-planner-pilot-v1",
+  "input_mode": "empty_ablation",
+  "facets": [
+    "网购撤回权",
+    "退货运费条件",
+    "定制商品例外",
+    "瑕疵商品权利"
+  ],
+  "constraints": [
+    "中国卖家向德国消费者销售",
+    "普通现货与量体定制分开",
+    "欧盟和德国官方资料",
+    "截至2026-09-28",
+    "不预设例外成立"
+  ],
+  "client_request_id": "commerce-manufacturing-v1-D05-r2"
+}

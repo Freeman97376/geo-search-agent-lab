@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "kind": "planner",
+  "prompt": "我们经营面向英国消费者的通勤背包独立站，想开发可装16英寸笔记本、适合雨天骑行的新款。请检索2025年1月1日至2026年9月28日公开的用户评价和讨论，整理防水、背负舒适、电脑仓尺寸及拉链耐用性方面的反复抱怨，并对照品牌官网规格。把论坛个案与多来源重复问题分开，不要把评论数量当作市场规模。",
+  "title": "D03 选品与用户痛点 第1次",
+  "experiment_id": "commerce-manufacturing-v1",
+  "profile_id": "qwen3-8b-planner-pilot-v1",
+  "input_mode": "empty_ablation",
+  "facets": [
+    "用户评论与讨论",
+    "防水舒适和耐用问题",
+    "16英寸电脑适配",
+    "官方规格交叉核验"
+  ],
+  "constraints": [
+    "英国消费者",
+    "雨天骑行通勤",
+    "16英寸笔记本",
+    "2025-01-01至2026-09-28",
+    "个案与重复证据分开",
+    "不推断市场规模"
+  ],
+  "client_request_id": "commerce-manufacturing-v1-D03-r1"
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "kind": "planner",
+  "prompt": "我住在美国，想从品牌独立站购买适合夏季跑步的美利奴羊毛短袖，预算每件80美元以内，女款M码。请寻找3个候选品牌，比较羊毛含量、尺码、现价、寄往美国的运费和退货条件。只把能找到官网证据的商品列为候选，不要用亚马逊商品替代。资料截至2026年9月28日。",
+  "title": "D01 消费者寻找品牌 第1次",
+  "experiment_id": "commerce-manufacturing-v1",
+  "profile_id": "qwen3-8b-planner-pilot-v1",
+  "input_mode": "empty_ablation",
+  "facets": [
+    "候选品牌发现",
+    "材质和尺码证据",
+    "商品价格与到手成本",
+    "配送和退货条件"
+  ],
+  "constraints": [
+    "美国收货",
+    "女款M码",
+    "每件80美元以内",
+    "夏季跑步美利奴短袖",
+    "品牌官网证据",
+    "截至2026-09-28"
+  ],
+  "client_request_id": "commerce-manufacturing-v1-D01-r1"
+}

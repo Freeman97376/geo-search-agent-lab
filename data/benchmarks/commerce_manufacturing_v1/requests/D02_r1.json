@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "kind": "planner",
+  "prompt": "我们准备做面向美国市场的不锈钢保温杯独立站，主推带手柄、带吸管的40oz产品。请研究 Stanley、Owala、Simple Modern 的相近官网产品，比较常规售价与促销价、容量和材质、配件、质保及免邮门槛，为我们寻找差异化方向。不要把不同容量混在一起，也不要把标价当成销量。资料截至2026年9月28日。",
+  "title": "D02 竞品定价与定位 第1次",
+  "experiment_id": "commerce-manufacturing-v1",
+  "profile_id": "qwen3-8b-planner-pilot-v1",
+  "input_mode": "empty_ablation",
+  "facets": [
+    "同类竞品选择",
+    "常规价和促销价",
+    "材质配件差异",
+    "质保和免邮条件"
+  ],
+  "constraints": [
+    "美国市场",
+    "40oz带手柄带吸管",
+    "三个指定品牌",
+    "官网公开证据",
+    "截至2026-09-28",
+    "价格不等于销量"
+  ],
+  "client_request_id": "commerce-manufacturing-v1-D02-r1"
+}

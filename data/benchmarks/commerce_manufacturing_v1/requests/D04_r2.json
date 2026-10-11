@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "kind": "planner",
+  "prompt": "我们面向美国销售儿童不锈钢保温饭盒，准备做英语SEO内容。请研究用户关于能否放洗碗机、食物保温时长、漏汤和密封圈清洁的搜索需求，区分购买比较、使用方法和问题排查，给出值得单独建页的主题及证据来源。不凭空给搜索量或关键词难度，也不要为了排名编造安全承诺。资料截至2026年9月28日。",
+  "title": "D04 SEO内容与搜索意图 第2次",
+  "experiment_id": "commerce-manufacturing-v1",
+  "profile_id": "qwen3-8b-planner-pilot-v1",
+  "input_mode": "empty_ablation",
+  "facets": [
+    "购买比较意图",
+    "使用清洁意图",
+    "漏汤问题排查",
+    "主题与证据来源"
+  ],
+  "constraints": [
+    "美国英语搜索",
+    "儿童不锈钢保温饭盒",
+    "不虚构搜索量和难度",
+    "不编造安全承诺",
+    "截至2026-09-28"
+  ],
+  "client_request_id": "commerce-manufacturing-v1-D04-r2"
+}

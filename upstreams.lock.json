@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "repositories": [
+    {
+      "directory": "gpt-researcher",
+      "url": "https://github.com/assafelovic/gpt-researcher.git",
+      "branch": "main",
+      "commit": "0957c301ed06c2a5857b834358c7227c739041d4",
+      "commit_date": "2026-09-26T19:56:07+03:00",
+      "exact_tags": [
+        "v3.7.0"
+      ],
+      "version_from_source": "0.16.0",
+      "cloned_at_utc": "2026-09-28T06:27:26.865640+00:00",
+      "clone_time_basis": "new .git directory creation time",
+      "recorded_at_utc": "2026-09-28T06:35:21.414652+00:00",
+      "license": "MIT",
+      "license_file": "LICENSE",
+      "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "shallow_clone": true,
+      "clean_worktree": true,
+      "tag_lookup": "official remote tags, including annotated tag targets"
+    },
+    {
+      "directory": "searxng",
+      "url": "https://github.com/searxng/searxng.git",
+      "branch": "master",
+      "commit": "12f8b6515ca77c3c3bc1498584950ef5daca1433",
+      "commit_date": "2026-09-25T18:50:35+02:00",
+      "exact_tags": [],
+      "version_from_source": "2026.9.25+12f8b6515",
+      "cloned_at_utc": "2026-09-28T06:27:29.807703+00:00",
+      "clone_time_basis": "new .git directory creation time",
+      "recorded_at_utc": "2026-09-28T06:35:21.772150+00:00",
+      "license": "AGPL-3.0-or-later",
+      "license_file": "LICENSE",
+      "license_sha256": "282751b8c98ee9e445346eb57a992c9ecbe25ed8dd554df046777313e19b10f9",
+      "shallow_clone": true,
+      "clean_worktree": true,
+      "windows_excluded_paths": [
+        "utils/templates/etc/httpd/sites-available/searxng.conf:socket",
+        "utils/templates/etc/nginx/default.apps-available/searxng.conf:socket",
+        "utils/templates/etc/uwsgi/apps-archlinux/searxng.ini:socket",
+        "utils/templates/etc/uwsgi/apps-available/searxng.ini:socket"
+      ],
+      "tag_lookup": "official remote tags, including annotated tag targets"
+    },
+    {
+      "directory": "qwen-agent",
+      "url": "https://github.com/QwenLM/Qwen-Agent.git",
+      "branch": "main",
+      "commit": "31a4d36d123688581a9e9744427272b33ce940e0",
+      "commit_date": "2026-03-04T16:13:57+08:00",
+      "exact_tags": [],
+      "version_from_source": "0.0.34",
+      "cloned_at_utc": "2026-09-28T06:27:56.623103+00:00",
+      "clone_time_basis": "new .git directory creation time",
+      "recorded_at_utc": "2026-09-28T06:35:21.946630+00:00",
+      "license": "Apache-2.0",
+      "license_file": "LICENSE",
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "shallow_clone": true,
+      "clean_worktree": true,
+      "tag_lookup": "official remote tags, including annotated tag targets"
+    }
+  ]
+}

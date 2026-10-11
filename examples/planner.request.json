@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "kind": "planner",
+  "prompt": "比较 Notion 和 Confluence 对美国20人小企业的适用性，重点研究权限、搜索和年度费用。",
+  "title": "知识库比较",
+  "experiment_id": "knowledge-base-pilot",
+  "profile_id": "qwen3-8b-planner-pilot-v1",
+  "input_mode": "empty_ablation",
+  "snapshot_id": null,
+  "facets": ["权限", "搜索", "年度费用"],
+  "constraints": ["美国", "20人小企业"],
+  "client_request_id": "example-knowledge-base-001"
+}

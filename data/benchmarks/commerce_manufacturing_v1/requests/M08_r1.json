@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "kind": "planner",
+  "prompt": "我们是做苹果配件的工厂，想找欧洲客户，也想知道要什么认证。这里的“苹果配件”可能指苹果品牌电子设备周边，也可能指水果苹果分选设备零件，目前还没确定业务线。请先列清需要确认的问题，再分别搜索两条业务线有哪些潜在B2B客户类型和合规核查入口。不要擅自选一种解释，不要捏造产品电压、无线功能或目标国家。资料截至2026年9月28日。",
+  "title": "M08 模糊需求与前提识别 第1次",
+  "experiment_id": "commerce-manufacturing-v1",
+  "profile_id": "qwen3-8b-planner-pilot-v1",
+  "input_mode": "empty_ablation",
+  "facets": [
+    "电子配件业务分支",
+    "水果设备零件业务分支",
+    "两类客户类型",
+    "待确认信息与合规入口"
+  ],
+  "constraints": [
+    "两种解释同时保留",
+    "欧洲B2B",
+    "不虚构电压无线和国家",
+    "截至2026-09-28"
+  ],
+  "client_request_id": "commerce-manufacturing-v1-M08-r1"
+}

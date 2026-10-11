@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "kind": "planner",
+  "prompt": "我们是中国食品级硅胶厨房用品制造商，想在德国拓展B2B客户。请寻找公开经营硅胶烘焙模具或厨房工具的进口商、批发商和私牌品牌，区分三种客户类型，核查产品匹配、德国业务存在和官网公开商务联系渠道。不要收集个人私人联系方式，不要仅凭销售类似产品就断言其正在采购。资料截至2026年9月28日。",
+  "title": "M03 出口获客与经销商发现 第2次",
+  "experiment_id": "commerce-manufacturing-v1",
+  "profile_id": "qwen3-8b-planner-pilot-v1",
+  "input_mode": "empty_ablation",
+  "facets": [
+    "潜在企业客户发现",
+    "进口批发私牌类型区分",
+    "产品与地区匹配",
+    "公开商务联系渠道"
+  ],
+  "constraints": [
+    "中国硅胶厨房用品制造商",
+    "德国B2B客户",
+    "仅公开企业联系方式",
+    "潜客不等于已确认采购需求",
+    "截至2026-09-28"
+  ],
+  "client_request_id": "commerce-manufacturing-v1-M03-r2"
+}

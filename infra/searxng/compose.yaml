@@ -1,0 +1,24 @@
+# Adapted from the pinned official searxng/container/docker-compose.yml.
+# Image digests are mandatory: start_searxng.ps1 creates .env from images.lock.json.
+name: geo-search-lab-searxng
+services:
+  core:
+    image: ${SEARXNG_IMAGE:?Run scripts/start_searxng.ps1 to prepare pinned images}
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8888:8080"
+    environment:
+      SEARXNG_BASE_URL: http://127.0.0.1:8888/
+      SEARXNG_PORT: "8080"
+    volumes:
+      - ./core-config/:/etc/searxng/
+      - core-data:/var/cache/searxng/
+  valkey:
+    image: ${VALKEY_IMAGE:?Run scripts/start_searxng.ps1 to prepare pinned images}
+    command: valkey-server --save 30 1 --loglevel warning
+    restart: unless-stopped
+    volumes:
+      - valkey-data:/data/
+volumes:
+  core-data:
+  valkey-data:

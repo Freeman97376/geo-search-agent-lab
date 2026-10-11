@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "kind": "planner",
+  "prompt": "我们准备在美国销售家用手冲咖啡器具，月营销预算3000美元，暂时没有真实订单转化数据。请检索Google搜索广告和SEO内容获客的公开参考资料，关注购买意图、广告基准数据口径、内容制作成本和从点击到毛利的评估方法。给出后续试验需要收集的数据，不要凭行业平均值承诺ROAS，也不要直接声称某渠道一定更划算。资料截至2026年9月28日。",
+  "title": "D07 广告与SEO投入比较 第1次",
+  "experiment_id": "commerce-manufacturing-v1",
+  "profile_id": "qwen3-8b-planner-pilot-v1",
+  "input_mode": "empty_ablation",
+  "facets": [
+    "购买意图词",
+    "广告基准数据及口径",
+    "SEO成本组成",
+    "投入产出试验所需数据"
+  ],
+  "constraints": [
+    "美国市场",
+    "手冲咖啡器具",
+    "每月3000美元预算",
+    "没有真实转化数据",
+    "不承诺ROAS",
+    "截至2026-09-28"
+  ],
+  "client_request_id": "commerce-manufacturing-v1-D07-r1"
+}

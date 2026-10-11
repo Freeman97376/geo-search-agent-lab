@@ -1,0 +1,16 @@
+{
+  "profile_id": "qwen3-8b-planner-pilot-v1",
+  "base_url": "http://127.0.0.1:11434/v1",
+  "model": "qwen3:8b",
+  "model_digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+  "max_iterations": 3,
+  "report_type": "research_report",
+  "temperature": 0.4,
+  "max_tokens": 2048,
+  "reasoning_effort": "none",
+  "request_limit": 3,
+  "request_timeout_seconds": 90,
+  "trial_timeout_seconds": 180,
+  "configured_context_length": 8192,
+  "notes": "Local experimental profile. Native planner and prompt retained; cloud model replaced, thinking disabled, generation and transport bounded explicitly. No forced JSON format or seed."
+}

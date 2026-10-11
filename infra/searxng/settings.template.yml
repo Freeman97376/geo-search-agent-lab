@@ -1,0 +1,26 @@
+# Explicit candidate set, NOT a validated/frozen baseline yet.
+# Preserve upstream ordering, scoring, engine weights, and extraction.
+use_default_settings:
+  engines:
+    keep_only:
+      - google
+      - bing
+      - duckduckgo
+search:
+  default_lang: auto
+  formats:
+    - html
+    - json
+server:
+  secret_key: "__GENERATE_LOCAL_SECRET__"
+  limiter: false
+  public_instance: false
+valkey:
+  url: valkey://valkey:6379/0
+engines:
+  - name: google
+    disabled: false
+  - name: bing
+    disabled: false
+  - name: duckduckgo
+    disabled: false

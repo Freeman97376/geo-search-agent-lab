@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "kind": "planner",
+  "prompt": "我们的独立站使用Shopify Payments，店铺经营主体在美国。请查询2026年7月1日至9月28日期间Shopify官方发布的支付费用或拒付处理相关变化，分清公告日期、实际生效日期、美国适用范围和其他地区。没有找到明确变化就标记证据不足，不要把帮助页面更新时间直接当成政策生效日。",
+  "title": "D08 平台政策时效追踪 第1次",
+  "experiment_id": "commerce-manufacturing-v1",
+  "profile_id": "qwen3-8b-planner-pilot-v1",
+  "input_mode": "empty_ablation",
+  "facets": [
+    "支付费用变化",
+    "拒付处理变化",
+    "公告与生效日期",
+    "美国适用范围"
+  ],
+  "constraints": [
+    "Shopify官方来源",
+    "美国主体店铺",
+    "2026-07-01至2026-09-28",
+    "无证据不编造",
+    "页面更新时间不等于生效日"
+  ],
+  "client_request_id": "commerce-manufacturing-v1-D08-r1"
+}

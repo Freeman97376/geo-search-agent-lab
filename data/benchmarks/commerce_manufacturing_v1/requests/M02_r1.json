@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "kind": "planner",
+  "prompt": "我们是一家德国自动化设备公司，要采购CNC加工的6061-T6铝合金支架，单批200件，关键孔位公差±0.02mm，黑色阳极氧化。请寻找可服务德国客户的欧洲或中国工厂，比较加工与检测能力、表面处理、质量体系和交期证据。图纸尚未发出，请不要给精确单价或把工厂宣传的最高精度等同于本零件保证公差。资料截至2026年9月28日。",
+  "title": "M02 工业零件采购 第1次",
+  "experiment_id": "commerce-manufacturing-v1",
+  "profile_id": "qwen3-8b-planner-pilot-v1",
+  "input_mode": "empty_ablation",
+  "facets": [
+    "符合材料工艺的供应商",
+    "公差与检测能力",
+    "阳极氧化和质量体系",
+    "交期与报价缺失条件"
+  ],
+  "constraints": [
+    "德国买方欧洲或中国供应商",
+    "6061-T6铝支架",
+    "200件每批",
+    "关键孔位±0.02mm",
+    "黑色阳极氧化",
+    "无图纸不报精确单价",
+    "截至2026-09-28"
+  ],
+  "client_request_id": "commerce-manufacturing-v1-M02-r1"
+}

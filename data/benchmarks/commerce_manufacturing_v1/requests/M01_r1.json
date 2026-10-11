@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "kind": "planner",
+  "prompt": "我们是英国护肤品牌，计划采购30ml可回收PET材质真空泵瓶，首单5000套，需要定制颜色和丝印。请寻找中国具有该类包装生产能力的制造商，核查材料、泵体兼容性、起订量、打样周期、模具归属和是否实际生产。优先工厂官网，把贸易商与制造商分开，不要把自称环保当作有认证。资料截至2026年9月28日。",
+  "title": "M01 品牌方寻找OEM工厂 第1次",
+  "experiment_id": "commerce-manufacturing-v1",
+  "profile_id": "qwen3-8b-planner-pilot-v1",
+  "input_mode": "empty_ablation",
+  "facets": [
+    "匹配规格的工厂发现",
+    "材质和泵体兼容性",
+    "MOQ打样和定制能力",
+    "生产身份及环保依据"
+  ],
+  "constraints": [
+    "中国制造商英国买方",
+    "30ml PET真空泵瓶",
+    "首单5000套",
+    "定制颜色和丝印",
+    "贸易商与工厂分开",
+    "截至2026-09-28"
+  ],
+  "client_request_id": "commerce-manufacturing-v1-M01-r1"
+}

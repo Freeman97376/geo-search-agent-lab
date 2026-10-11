@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "kind": "planner",
+  "prompt": "我们生产食品和化妆品纸包装，计划在2027年上半年参加一次欧洲B2B包装展。请寻找德国、法国或意大利的候选展会，核查2027年1月1日至6月30日的实际举办日期、地点、观众构成、参展商目录和公开参展费用。总预算2万欧元，费用不公开时列出询价项，不要沿用2026年的日期或把展位裸地费当总成本。以2026年9月28日能查到的资料为准。",
+  "title": "M07 海外展会与渠道预算 第2次",
+  "experiment_id": "commerce-manufacturing-v1",
+  "profile_id": "qwen3-8b-planner-pilot-v1",
+  "input_mode": "empty_ablation",
+  "facets": [
+    "候选展会及日期",
+    "观众和展商匹配",
+    "公开费用与询价项目",
+    "总预算组成"
+  ],
+  "constraints": [
+    "2027年上半年",
+    "德国法国意大利",
+    "食品化妆品纸包装B2B",
+    "2万欧元总预算",
+    "截至2026-09-28已公开资料",
+    "不沿用往届日期"
+  ],
+  "client_request_id": "commerce-manufacturing-v1-M07-r2"
+}
